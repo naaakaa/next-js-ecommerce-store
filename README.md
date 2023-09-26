@@ -1,5 +1,23 @@
 ## Next.js Ecommerce Store
 
+Create a readme with:
+[x]Title
+Description
+List of all technologies used
+Command line
+Visual Studio Code
+ESLint
+next.js
+CSS
+localhost
+Browser Chrome
+Linux Laptop
+Github
+
+1 or 2 screenshots
+Setup instructions
+Deployment instructions
+
 # September 2023, naaakaa, @UpLeveled
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

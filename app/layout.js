@@ -1,8 +1,6 @@
 import './globals.scss';
-import { Inter } from 'next/font/google';
+import Image from 'next/image';
 import Link from 'next/link';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: { default: 'Homepage | Bike Shop', template: '%s | Bike Shop' },
@@ -12,15 +10,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <nav>
           <div>
             <Link href="/">Home</Link>
-            <Link href="/product-page">Products</Link>
+            <Link href="/product-page">The bike</Link>
             <Link href="/cart-page">Cart</Link>
+            <Image src="/logo.jpg" alt="Logo" height="50" width="50" />
+            {Math.floor(Math.random() * 10)}
           </div>
-
-          {Math.floor(Math.random() * 10)}
         </nav>
 
         {children}
