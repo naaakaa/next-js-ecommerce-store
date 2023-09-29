@@ -12,12 +12,18 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <nav>
-          <div>
+          <div id="links">
             <Link href="/">Home</Link>
             <Link href="/product-page">The bike</Link>
             <Link href="/cart-page">Cart</Link>
+          </div>
+          <div className="logo">
             <Image src="/logo.jpg" alt="Logo" height="50" width="50" />
+          </div>
+          <div id="cart">
+            Cart:
             {Math.floor(Math.random() * 10)}
+            items
           </div>
         </nav>
 
