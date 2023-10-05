@@ -9,22 +9,27 @@ export default function Home() {
       <h1>Products</h1>
       <div>
         <p>Cargobike</p>
-        <Image src="/cargo.jpg" alt="Cargobike" width="100" height="100" />
+        <Image src="/Cargobike.jpg" alt="Cargobike" width="100" height="100" />
 
         <p>Mountainbike</p>
         <Image
-          src="/mountain.jpg"
+          src="/Mountainbike.jpg"
           alt="Mountainbike"
           width="100"
           height="100"
         />
 
         <p>Touringbike</p>
-        <Image src="/touring.jpg" alt="Touringbike" width="100" height="100" />
+        <Image
+          src="/Touringbike.jpg"
+          alt="Touringbike"
+          width="100"
+          height="100"
+        />
 
         <p>Bike with trailer</p>
         <Image
-          src="/trailer.jpg"
+          src="/Trailer.jpg"
           alt="Bike with trailer"
           width="100"
           height="100"
