@@ -14,8 +14,10 @@ export default function RootLayout({ children }) {
         <nav>
           <div id="links">
             <Link href="/">Home</Link>
-            <Link href="/product-page">The bike</Link>
-            <Link href="/cart-page">Cart</Link>
+            <Link href="/products-page" data-test-id="products-link">
+              Our bikes
+            </Link>
+            <Link href="/cart-page">Your cart</Link>
           </div>
           <div className="logo">
             <Image src="/logo.jpg" alt="Logo" height="50" width="50" />

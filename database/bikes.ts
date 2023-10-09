@@ -11,6 +11,6 @@ export function getBikes() {
   return bikes;
 }
 
-export function getBike(id) {
-  return bikes.find((bike) => bike.id === id);
-}
+//export function getBike(id: number) {
+//  return bikes.find((bike) => bike.id === id);
+//}

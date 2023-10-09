@@ -1,18 +1,15 @@
 div {
   width: 90vw;
-  //justify-content: space-around;
-  //align-items: center;
-  //display: flex;
 }
 
 body {
-  background: rgb(173, 239, 239);
+  background: #f0f1f3;
 }
 
 nav {
   width: 100vw;
   height: 4rem;
-  background: rgb(235, 145, 26);
+  background: #ed431f;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -26,5 +23,60 @@ nav {
   height: 60px;
   width: 60px;
   position: relative;
-  margin-right: 10%;
+  margin-right: 20%;
+}
+
+button,
+input[type='submit'] {
+  background: #1266ff;
+  border: none;
+  border-bottom: 3px solid;
+  color: #fff;
+  display: inline-block;
+  padding: 8px vertical-align bottom;
+  width: 50%;
+
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+  &:active,
+  &.active {
+    margin-top: 2px;
+    border-bottom-width: 1px;
+  }
+}
+
+.container {
+  background: #f5f5f7;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin: 30px auto;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.buttons {
+  background: #f0f0f2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px 4px 0 0;
+  overflow: hidden padding 25px 30px;
+}
+
+.input {
+  margin: 30px;
+  position: relative;
+}
+
+input {
+  background: #fff border none;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3), 1px 1px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 0 4px;
+  padding: 6px 10px 4px;
+  width: 100%;
+
+  &.form-submit {
+    bottom: 0 box-shadow none margin 0 position absolute width 100%;
+  }
 }

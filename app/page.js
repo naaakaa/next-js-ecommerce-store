@@ -6,10 +6,20 @@ export default function Home() {
   return (
     <main>
       <LocalStorage />
-      <h1>Products</h1>
+      <h1>Welcome to our Webshop!</h1>
+      <p>
+        We have used bicycles of different types and in different conditions.
+      </p>
+      <p>
+        Some are ready to ride, some can be repaired with our help, some are
+        rarities for collectors.
+      </p>
+      <h2>Here are some examples:</h2>
       <div>
         <p>Cargobike</p>
         <Image src="/Cargobike.jpg" alt="Cargobike" width="100" height="100" />
+        <br />
+        <br />
 
         <p>Mountainbike</p>
         <Image
@@ -18,6 +28,8 @@ export default function Home() {
           width="100"
           height="100"
         />
+        <br />
+        <br />
 
         <p>Touringbike</p>
         <Image
@@ -26,6 +38,8 @@ export default function Home() {
           width="100"
           height="100"
         />
+        <br />
+        <br />
 
         <p>Bike with trailer</p>
         <Image
