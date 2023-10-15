@@ -1,5 +1,5 @@
 div {
-  width: 90vw;
+  width: 100vw;
 }
 
 body {
@@ -11,27 +11,44 @@ nav {
   height: 4rem;
   background: #ed431f;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+#Cart {
+  position: right;
+}
 
-  > div a {
-    margin: 4px;
-  }
+div.row {
+  display: flex;
+  margin: 20px;
+}
+
+.twoHundred {
+  width: 200px;
+}
+Link {
+  margin: 10px;
+}
+
+#links {
+  display: flex;
 }
 
 .logo {
   height: 60px;
   width: 60px;
-  position: relative;
-  margin-right: 20%;
+
+  padding: 5px;
+  border-width: 10px;
+  border-color: #f0f1f3;
 }
 
 button,
 input[type='submit'] {
-  background: #1266ff;
+  background: #ed431f;
   border: none;
   border-bottom: 3px solid;
-  color: #fff;
+  color: #f0f1f3;
   display: inline-block;
   padding: 8px vertical-align bottom;
   width: 50%;
@@ -74,9 +91,9 @@ input {
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3), 1px 1px 0 rgba(0, 0, 0, 0.1);
   margin: 0 0 4px;
   padding: 6px 10px 4px;
-  width: 100%;
+  width: 50%;
 
   &.form-submit {
-    bottom: 0 box-shadow none margin 0 position absolute width 100%;
+    bottom: 0 box-shadow none margin 0 position absolute width 50%;
   }
 }

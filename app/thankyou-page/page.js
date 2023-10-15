@@ -1,4 +1,4 @@
-export default function ProductPage() {
+export default function ThanksPage() {
   return (
     <div>
       <h1>Thank you!</h1>

@@ -4,7 +4,7 @@ import LocalStorage from './LocalStorage';
 
 export default function Home() {
   return (
-    <main>
+    <div>
       <LocalStorage />
       <h1>Welcome to our Webshop!</h1>
       <p>
@@ -15,40 +15,48 @@ export default function Home() {
         rarities for collectors.
       </p>
       <h2>Here are some examples:</h2>
-      <div>
-        <p>Cargobike</p>
-        <Image src="/Cargobike.jpg" alt="Cargobike" width="100" height="100" />
-        <br />
-        <br />
 
-        <p>Mountainbike</p>
-        <Image
-          src="/Mountainbike.jpg"
-          alt="Mountainbike"
-          width="100"
-          height="100"
-        />
-        <br />
-        <br />
+      <div class="row">
+        <div>
+          <p>Cargobike</p>
+          <Image
+            src="/Cargobike.jpg"
+            alt="Cargobike"
+            width="100"
+            height="100"
+          />
+        </div>
 
-        <p>Touringbike</p>
-        <Image
-          src="/Touringbike.jpg"
-          alt="Touringbike"
-          width="100"
-          height="100"
-        />
-        <br />
-        <br />
+        <div>
+          <p>Mountainbike</p>
+          <Image
+            src="/Mountainbike.jpg"
+            alt="Mountainbike"
+            width="100"
+            height="100"
+          />
+        </div>
 
-        <p>Bike with trailer</p>
-        <Image
-          src="/Trailer.jpg"
-          alt="Bike with trailer"
-          width="100"
-          height="100"
-        />
+        <div>
+          <p>Touringbike</p>
+          <Image
+            src="/Touringbike.jpg"
+            alt="Touringbike"
+            width="100"
+            height="100"
+          />
+        </div>
+
+        <div>
+          <p>Bike with trailer</p>
+          <Image
+            src="/Trailer.jpg"
+            alt="Bike with trailer"
+            width="100"
+            height="100"
+          />
+        </div>
       </div>
-    </main>
+    </div>
   );
 }

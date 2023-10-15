@@ -14,7 +14,7 @@ export default async function BikesPage() {
   return (
     <div>
       <h1>The bikes</h1>
-      <div className="main">
+      <div className="row">
         {bikes.map((bike) => {
           return (
             <div key={`bike-div-${bike.id}`}>
@@ -23,6 +23,7 @@ export default async function BikesPage() {
                 data-test-id="product-<product id>"
               >
                 {bike.name}
+                <br />
                 <br />
                 <Image
                   src={`/${bike.type}.jpg`}
@@ -33,7 +34,7 @@ export default async function BikesPage() {
               </Link>
               <br />
 
-              <button>Add to cart</button>
+              <button className="twoHundred">Add to cart</button>
               <br />
               <br />
             </div>

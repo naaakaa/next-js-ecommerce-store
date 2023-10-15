@@ -1,3 +1,6 @@
+import { redirect } from 'next/navigation';
+import DeleteCookie from './toThankYou';
+
 export const metadata = {
   title: 'Checkout page',
   description: 'Bike Shop',
@@ -7,9 +10,9 @@ export default function CheckOutPage() {
   return (
     <div>
       <h1>Ready for checkout...</h1>
-      <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+      <p>Enter values in the fields, then click "Submit" to submit the form:</p>
 
-      <form id="frm1" action="/action_page.php">
+      <form id="frm1">
         First name:{' '}
         <input name="fname" data-test-id="checkout-first-name" required />
         <br />
@@ -53,10 +56,10 @@ export default function CheckOutPage() {
         <br />
         Credit card number:{' '}
         <input
-          type="tel"
+          type="number"
           name="cardnr"
           pattern="\d*"
-          placeholder="1234 5678 1234 5678"
+          placeholder="1234567812345678"
           minLength="19"
           maxLength="19"
           data-test-id="checkout-credit-card"
@@ -67,8 +70,6 @@ export default function CheckOutPage() {
         <input
           type="tel"
           name="expdate"
-          pattern="\d*"
-          minLength="5"
           maxLength="5"
           placeholder="MM/YY"
           data-test-id="checkout-expiration-date"
@@ -88,7 +89,7 @@ export default function CheckOutPage() {
         />
         <br />
         <br />
-        <input type="submit" onclick="myFunction()" value="Confirm order" />
+        <DeleteCookie />
       </form>
     </div>
   );
